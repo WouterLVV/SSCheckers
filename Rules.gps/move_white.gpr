@@ -16,7 +16,7 @@
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>279 790 51 68</string>
+                <string>264 764 50 51</string>
             </attr>
         </node>
         <node id="n1">
@@ -51,27 +51,12 @@
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>turn</string>
+                <string>new:flag:black</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>new:flag:black</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n0">
-            <attr name="label">
-                <string>new:on</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>stone</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n2">
-            <attr name="label">
-                <string>del:on</string>
+                <string>turn</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -79,19 +64,34 @@
                 <string>flag:white</string>
             </attr>
         </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>new:on</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n2">
+            <attr name="label">
+                <string>del:on</string>
+            </attr>
+        </edge>
         <edge from="n4" to="n4">
             <attr name="label">
                 <string>not:</string>
             </attr>
         </edge>
-        <edge from="n4" to="n0">
-            <attr name="label">
-                <string>not:on</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n4">
             <attr name="label">
                 <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n0">
+            <attr name="label">
+                <string>not:on</string>
             </attr>
         </edge>
     </graph>

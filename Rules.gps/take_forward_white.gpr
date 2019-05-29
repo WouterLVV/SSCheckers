@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="take_forward_white">
+        <attr name="priority">
+            <string>4</string>
+        </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
@@ -12,11 +15,6 @@
         <node id="n6">
             <attr name="layout">
                 <string>502 251 29 17</string>
-            </attr>
-        </node>
-        <node id="n7">
-            <attr name="layout">
-                <string>287 807 36 34</string>
             </attr>
         </node>
         <node id="n5">
@@ -41,7 +39,7 @@
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>280 798 50 51</string>
+                <string>374 844 50 51</string>
             </attr>
         </node>
         <edge from="n4" to="n4">
@@ -49,7 +47,7 @@
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n6" to="n0">
+        <edge from="n4" to="n0">
             <attr name="label">
                 <string>?x</string>
             </attr>
@@ -59,24 +57,9 @@
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n7" to="n7">
-            <attr name="label">
-                <string>turn</string>
-            </attr>
-        </edge>
-        <edge from="n7" to="n7">
-            <attr name="label">
-                <string>flag:white</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n5">
             <attr name="label">
                 <string>flag:white</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n6">
-            <attr name="label">
-                <string>new:on</string>
             </attr>
         </edge>
         <edge from="n5" to="n5">
@@ -89,14 +72,14 @@
                 <string>del:on</string>
             </attr>
         </edge>
+        <edge from="n5" to="n6">
+            <attr name="label">
+                <string>new:on</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>not:</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n6">
-            <attr name="label">
-                <string>not:on</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -104,12 +87,17 @@
                 <string>stone</string>
             </attr>
         </edge>
+        <edge from="n3" to="n6">
+            <attr name="label">
+                <string>not:on</string>
+            </attr>
+        </edge>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n0" to="n4">
+        <edge from="n0" to="n6">
             <attr name="label">
                 <string>?x</string>
             </attr>
@@ -119,9 +107,9 @@
                 <string>del:</string>
             </attr>
         </edge>
-        <edge from="n1" to="n0">
+        <edge from="n1" to="n1">
             <attr name="label">
-                <string>on</string>
+                <string>flag:black</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -129,19 +117,19 @@
                 <string>stone</string>
             </attr>
         </edge>
-        <edge from="n1" to="n1">
+        <edge from="n1" to="n0">
             <attr name="label">
-                <string>flag:black</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>new:flag:black</string>
+                <string>on</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
                 <string>del:flag:white</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>new:flag:black</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
