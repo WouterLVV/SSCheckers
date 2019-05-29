@@ -1,70 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="move_white">
+    <graph role="rule" edgeids="false" edgemode="directed" id="become_king_white">
         <attr name="priority">
-            <string>1</string>
+            <string>6</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
-        <node id="n2">
-            <attr name="layout">
-                <string>497 436 29 17</string>
-            </attr>
-        </node>
         <node id="n0">
             <attr name="layout">
-                <string>502 251 29 17</string>
-            </attr>
-        </node>
-        <node id="n3">
-            <attr name="layout">
-                <string>264 764 50 51</string>
+                <string>344 267 29 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>589 351 36 34</string>
+                <string>589 92 43 51</string>
             </attr>
         </node>
-        <node id="n4">
+        <node id="n2">
             <attr name="layout">
-                <string>674 145 36 17</string>
+                <string>261 187 29 17</string>
             </attr>
         </node>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>field</string>
+        <node id="n3">
+            <attr name="layout">
+                <string>380 176 29 17</string>
             </attr>
-        </edge>
-        <edge from="n2" to="n0">
-            <attr name="label">
-                <string>?x</string>
-            </attr>
-        </edge>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n3" to="n3">
+        <edge from="n0" to="n3">
             <attr name="label">
-                <string>turn</string>
+                <string>not:ur</string>
             </attr>
         </edge>
-        <edge from="n3" to="n3">
+        <edge from="n0" to="n2">
             <attr name="label">
-                <string>del:flag:white</string>
+                <string>not:ul</string>
             </attr>
         </edge>
-        <edge from="n3" to="n3">
+        <edge from="n1" to="n1">
             <attr name="label">
-                <string>new:flag:black</string>
+                <string>cnew:flag:king</string>
             </attr>
         </edge>
-        <edge from="n1" to="n2">
+        <edge from="n1" to="n1">
             <attr name="label">
-                <string>del:on</string>
+                <string>flag:white</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -74,27 +59,27 @@
         </edge>
         <edge from="n1" to="n0">
             <attr name="label">
-                <string>new:on</string>
+                <string>on</string>
             </attr>
         </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>flag:white</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
+        <edge from="n2" to="n2">
             <attr name="label">
                 <string>not:</string>
             </attr>
         </edge>
-        <edge from="n4" to="n0">
+        <edge from="n2" to="n2">
             <attr name="label">
-                <string>not:on</string>
+                <string>field</string>
             </attr>
         </edge>
-        <edge from="n4" to="n4">
+        <edge from="n3" to="n3">
             <attr name="label">
-                <string>stone</string>
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>field</string>
             </attr>
         </edge>
     </graph>

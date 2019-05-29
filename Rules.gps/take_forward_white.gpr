@@ -67,14 +67,14 @@
                 <string>stone</string>
             </attr>
         </edge>
-        <edge from="n5" to="n4">
-            <attr name="label">
-                <string>del:on</string>
-            </attr>
-        </edge>
         <edge from="n5" to="n6">
             <attr name="label">
                 <string>new:on</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n4">
+            <attr name="label">
+                <string>del:on</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -124,12 +124,12 @@
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
-                <string>del:flag:white</string>
+                <string>flag:white</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
-                <string>new:flag:black</string>
+                <string>new:flag:taking</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">

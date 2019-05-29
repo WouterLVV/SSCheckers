@@ -29,14 +29,14 @@
                 <string>469 287 36 34</string>
             </attr>
         </node>
-        <node id="n5">
-            <attr name="layout">
-                <string>712 410 29 17</string>
-            </attr>
-        </node>
         <node id="n6">
             <attr name="layout">
                 <string>242 685 35 34</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>318 390 36 17</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -94,16 +94,6 @@
                 <string>on</string>
             </attr>
         </edge>
-        <edge from="n5" to="n5">
-            <attr name="label">
-                <string>field</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n2">
-            <attr name="label">
-                <string>ul</string>
-            </attr>
-        </edge>
         <edge from="n6" to="n6">
             <attr name="label">
                 <string>flag:black</string>
@@ -112,6 +102,16 @@
         <edge from="n6" to="n6">
             <attr name="label">
                 <string>turn</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n0">
+            <attr name="label">
+                <string>on</string>
             </attr>
         </edge>
     </graph>
