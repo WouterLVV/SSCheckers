@@ -22,21 +22,6 @@
                 <string>312 410 19 19</string>
             </attr>
         </node>
-        <node id="n2">
-            <attr name="layout">
-                <string>219 314 26 17</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>109 233 33 17</string>
-            </attr>
-        </node>
-        <node id="n5">
-            <attr name="layout">
-                <string>321 316 19 19</string>
-            </attr>
-        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>bottom</string>
@@ -45,11 +30,6 @@
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>field</string>
-            </attr>
-        </edge>
-        <edge from="n0" to="n2">
-            <attr name="label">
-                <string>ur</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -81,44 +61,6 @@
             </attr>
         </edge>
         <edge from="n1" to="n0">
-            <attr name="label">
-                <string>not:on</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>field</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>new:</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>flag:black</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>new:stone</string>
-            </attr>
-            <attr name="layout">
-                <string>500 0 125 241 109 311 125 241 11</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n2">
-            <attr name="label">
-                <string>new:on</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n5">
-            <attr name="label">
-                <string>not:</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n2">
             <attr name="label">
                 <string>not:on</string>
             </attr>
