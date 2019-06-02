@@ -1,0 +1,21 @@
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+diag_expand;
+
+alap {
+	add_right;
+	add_top;
+	connect_ur;
+	connect_ur_top;
+	left_expand;
+	vertical_expand;
+	bottom_expand;
+	horizontal_expand;
+}

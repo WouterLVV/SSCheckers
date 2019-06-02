@@ -21,18 +21,18 @@
         </edge>
         <edge from="n0" to="n0">
             <attr name="label">
-                <string>del:top</string>
+                <string>del:right</string>
             </attr>
             <attr name="layout">
-                <string>500 0 229 208 229 130 229 130 11</string>
+                <string>500 0 229 208 314 208 229 207 11</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
             <attr name="label">
-                <string>del:right</string>
+                <string>del:top</string>
             </attr>
             <attr name="layout">
-                <string>500 0 229 208 314 208 314 208 11</string>
+                <string>500 0 229 208 314 208 229 207 11</string>
             </attr>
         </edge>
         <edge from="n0" to="n1">
@@ -50,7 +50,7 @@
                 <string>new:field</string>
             </attr>
             <attr name="layout">
-                <string>500 0 367 127 367 191 367 191 11</string>
+                <string>500 0 367 127 367 191 366 126 11</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -58,7 +58,7 @@
                 <string>new:right</string>
             </attr>
             <attr name="layout">
-                <string>500 0 367 127 447 127 447 127 11</string>
+                <string>500 0 367 127 367 191 366 126 11</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -66,7 +66,7 @@
                 <string>new:top</string>
             </attr>
             <attr name="layout">
-                <string>500 0 367 127 366 55 366 55 11</string>
+                <string>500 0 367 127 367 191 366 126 11</string>
             </attr>
         </edge>
     </graph>
