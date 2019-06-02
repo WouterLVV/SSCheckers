@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="become_king_white">
+        <attr name="enabled">
+            <string>false</string>
+        </attr>
         <attr name="priority">
-            <string>6</string>
+            <string>16</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
@@ -27,11 +30,6 @@
                 <string>380 176 29 17</string>
             </attr>
         </node>
-        <edge from="n0" to="n0">
-            <attr name="label">
-                <string>field</string>
-            </attr>
-        </edge>
         <edge from="n0" to="n3">
             <attr name="label">
                 <string>not:ur</string>
@@ -42,9 +40,14 @@
                 <string>not:ul</string>
             </attr>
         </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>field</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>cnew:flag:king</string>
+                <string>stone</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -54,7 +57,7 @@
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>stone</string>
+                <string>cnew:flag:king</string>
             </attr>
         </edge>
         <edge from="n1" to="n0">
