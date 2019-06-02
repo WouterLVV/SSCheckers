@@ -37,17 +37,12 @@
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>stone</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>flag:black</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
                 <string>cnew:flag:king</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>stone</string>
             </attr>
         </edge>
         <edge from="n1" to="n0">
@@ -55,14 +50,14 @@
                 <string>on</string>
             </attr>
         </edge>
-        <edge from="n2" to="n2">
+        <edge from="n1" to="n1">
             <attr name="label">
-                <string>not:</string>
+                <string>flag:black</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
-                <string>field</string>
+                <string>not:</string>
             </attr>
         </edge>
         <edge from="n2" to="n0">
@@ -70,19 +65,24 @@
                 <string>not:ul</string>
             </attr>
         </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>field</string>
+            </attr>
+        </edge>
         <edge from="n3" to="n3">
             <attr name="label">
                 <string>not:</string>
             </attr>
         </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>field</string>
-            </attr>
-        </edge>
         <edge from="n3" to="n0">
             <attr name="label">
                 <string>not:ur</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>field</string>
             </attr>
         </edge>
     </graph>

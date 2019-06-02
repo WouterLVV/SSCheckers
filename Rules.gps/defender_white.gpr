@@ -1,45 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="take_forward_black">
+    <graph role="rule" edgeids="false" edgemode="directed" id="defender_white">
+        <attr name="enabled">
+            <string>false</string>
+        </attr>
         <attr name="priority">
-            <string>4</string>
+            <string>3</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>662 727 29 17</string>
+                <string>251 282 29 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>657 363 29 17</string>
-            </attr>
-        </node>
-        <node id="n6">
-            <attr name="layout">
-                <string>743 462 36 34</string>
-            </attr>
-        </node>
-        <node id="n4">
-            <attr name="layout">
-                <string>829 257 36 17</string>
-            </attr>
-        </node>
-        <node id="n5">
-            <attr name="layout">
-                <string>653 516 29 17</string>
+                <string>301 165 29 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>504 510 36 34</string>
+                <string>198 387 29 17</string>
+            </attr>
+        </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>409 93 36 34</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>307 466 29 17</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>367 281 36 34</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>384 399 36 34</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>522 922 51 51</string>
+                <string>86 382 36 17</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>87 540 45 34</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -47,94 +60,114 @@
                 <string>field</string>
             </attr>
         </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>?x</string>
+            </attr>
+        </edge>
         <edge from="n1" to="n1">
             <attr name="label">
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n1" to="n5">
+        <edge from="n2" to="n0">
             <attr name="label">
                 <string>?x</string>
             </attr>
         </edge>
-        <edge from="n6" to="n6">
-            <attr name="label">
-                <string>flag:black</string>
-            </attr>
-        </edge>
-        <edge from="n6" to="n6">
-            <attr name="label">
-                <string>stone</string>
-            </attr>
-        </edge>
-        <edge from="n6" to="n1">
-            <attr name="label">
-                <string>new:on</string>
-            </attr>
-        </edge>
-        <edge from="n6" to="n0">
-            <attr name="label">
-                <string>del:on</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>not:</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>stone</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n1">
-            <attr name="label">
-                <string>not:on</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n5">
+        <edge from="n2" to="n2">
             <attr name="label">
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n5" to="n0">
-            <attr name="label">
-                <string>?x</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>del:</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>flag:white</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>stone</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n5">
+        <edge from="n3" to="n1">
             <attr name="label">
                 <string>on</string>
             </attr>
         </edge>
-        <edge from="n7" to="n7">
+        <edge from="n3" to="n3">
             <attr name="label">
                 <string>flag:black</string>
             </attr>
         </edge>
-        <edge from="n7" to="n7">
+        <edge from="n3" to="n3">
             <attr name="label">
-                <string>new:flag:taking</string>
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n2">
+            <attr name="label">
+                <string>?</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>field</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>flag:white</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n0">
+            <attr name="label">
+                <string>on</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n4">
+            <attr name="label">
+                <string>del:on</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>flag:white</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n2">
+            <attr name="label">
+                <string>new:on</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">
             <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n2">
+            <attr name="label">
+                <string>not:on</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
                 <string>turn</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>del:flag:white</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>new:flag:black</string>
             </attr>
         </edge>
     </graph>

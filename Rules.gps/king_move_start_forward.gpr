@@ -1,48 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="become_king_white">
+    <graph role="rule" edgeids="false" edgemode="directed" id="king_move_start_forward">
         <attr name="enabled">
             <string>false</string>
         </attr>
         <attr name="priority">
-            <string>16</string>
+            <string>1</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>344 267 29 17</string>
+                <string>439 312 29 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>589 92 43 51</string>
+                <string>231 205 36 51</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>261 187 29 17</string>
+                <string>324 411 29 17</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>380 176 29 17</string>
+                <string>124 461 26 34</string>
             </attr>
         </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>441 479 36 17</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n2">
+            <attr name="label">
+                <string>?x[ul,ur]</string>
+            </attr>
+        </edge>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n0" to="n2">
+        <edge from="n1" to="n2">
             <attr name="label">
-                <string>not:ul</string>
+                <string>new:on</string>
             </attr>
         </edge>
-        <edge from="n0" to="n3">
+        <edge from="n1" to="n0">
             <attr name="label">
-                <string>not:ur</string>
+                <string>cnew:prev</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>flag:?y</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>flag:king</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -50,24 +70,9 @@
                 <string>stone</string>
             </attr>
         </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>cnew:flag:king</string>
-            </attr>
-        </edge>
         <edge from="n1" to="n0">
             <attr name="label">
-                <string>on</string>
-            </attr>
-        </edge>
-        <edge from="n1" to="n1">
-            <attr name="label">
-                <string>flag:white</string>
-            </attr>
-        </edge>
-        <edge from="n2" to="n2">
-            <attr name="label">
-                <string>not:</string>
+                <string>del:on</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -77,12 +82,27 @@
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>not:</string>
+                <string>flag:?y</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>field</string>
+                <string>turn</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n2">
+            <attr name="label">
+                <string>not:on</string>
             </attr>
         </edge>
     </graph>

@@ -39,17 +39,12 @@
         </edge>
         <edge from="n2" to="n0">
             <attr name="label">
-                <string>?x</string>
+                <string>?x[ul,ur]</string>
             </attr>
         </edge>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>field</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>turn</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
@@ -62,9 +57,14 @@
                 <string>new:flag:black</string>
             </attr>
         </edge>
-        <edge from="n1" to="n2">
+        <edge from="n3" to="n3">
             <attr name="label">
-                <string>del:on</string>
+                <string>turn</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>flag:white</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -77,9 +77,9 @@
                 <string>new:on</string>
             </attr>
         </edge>
-        <edge from="n1" to="n1">
+        <edge from="n1" to="n2">
             <attr name="label">
-                <string>flag:white</string>
+                <string>del:on</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
@@ -87,14 +87,14 @@
                 <string>not:</string>
             </attr>
         </edge>
-        <edge from="n4" to="n0">
-            <attr name="label">
-                <string>not:on</string>
-            </attr>
-        </edge>
         <edge from="n4" to="n4">
             <attr name="label">
                 <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n0">
+            <attr name="label">
+                <string>not:on</string>
             </attr>
         </edge>
     </graph>

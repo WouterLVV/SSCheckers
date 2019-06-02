@@ -1,43 +1,53 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="king_move_cont">
+    <graph role="rule" edgeids="false" edgemode="directed" id="king_take_start_backward">
         <attr name="enabled">
             <string>false</string>
         </attr>
         <attr name="priority">
-            <string>7</string>
+            <string>1</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>505 213 29 17</string>
+                <string>233 496 29 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>426 360 29 17</string>
+                <string>231 205 36 51</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>333 490 29 17</string>
+                <string>426 315 29 17</string>
             </attr>
         </node>
         <node id="n3">
             <attr name="layout">
-                <string>215 254 36 51</string>
+                <string>87 461 100 34</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>65 594 50 51</string>
+                <string>652 314 36 17</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>673 245 36 17</string>
+                <string>337 396 29 17</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>104 245 29 17</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>449 478 36 34</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -47,12 +57,37 @@
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>field</string>
+                <string>flag:?y</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n6">
+            <attr name="label">
+                <string>not:prev</string>
             </attr>
         </edge>
         <edge from="n1" to="n0">
             <attr name="label">
-                <string>?x</string>
+                <string>del:on</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n5">
+            <attr name="label">
+                <string>new:prev</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>flag:king</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n2">
+            <attr name="label">
+                <string>new:on</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -60,77 +95,69 @@
                 <string>field</string>
             </attr>
         </edge>
-        <edge from="n2" to="n1">
+        <edge from="n2" to="n5">
             <attr name="label">
-                <string>?x</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n1">
-            <attr name="label">
-                <string>del:on</string>
+                <string>?x[ul,ur]</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
             <attr name="label">
-                <string>flag:king</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n0">
-            <attr name="label">
-                <string>new:on</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n2">
-            <attr name="label">
-                <string>del:prev</string>
+                <string>flag:?y[black,white]</string>
             </attr>
         </edge>
         <edge from="n3" to="n3">
-            <attr name="label">
-                <string>stone</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n1">
-            <attr name="label">
-                <string>new:prev</string>
-            </attr>
-            <attr name="layout">
-                <string>581 -19 233 279 440 368 11</string>
-            </attr>
-        </edge>
-        <edge from="n3" to="n3">
-            <attr name="label">
-                <string>flag:?y</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
             <attr name="label">
                 <string>turn</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
             <attr name="label">
-                <string>flag:?y</string>
-            </attr>
-        </edge>
-        <edge from="n4" to="n4">
-            <attr name="label">
-                <string>flag:forward</string>
-            </attr>
-        </edge>
-        <edge from="n5" to="n5">
-            <attr name="label">
                 <string>not:</string>
             </attr>
         </edge>
-        <edge from="n5" to="n0">
+        <edge from="n4" to="n2">
             <attr name="label">
                 <string>not:on</string>
             </attr>
         </edge>
-        <edge from="n5" to="n5">
+        <edge from="n4" to="n4">
             <attr name="label">
                 <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>field</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n0">
+            <attr name="label">
+                <string>?x[ul,ur]</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>field</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>del:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>stone</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n5">
+            <attr name="label">
+                <string>del:on</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>not:flag:?y</string>
             </attr>
         </edge>
     </graph>

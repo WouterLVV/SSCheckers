@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
-    <graph role="rule" edgeids="false" edgemode="directed" id="take_backward_white">
+    <graph role="rule" edgeids="false" edgemode="directed" id="take_forward_black_start">
         <attr name="priority">
-            <string>4</string>
+            <string>8</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>507 615 29 17</string>
+                <string>662 727 29 17</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>502 251 29 17</string>
+                <string>657 363 29 17</string>
             </attr>
         </node>
         <node id="n6">
             <attr name="layout">
-                <string>588 350 36 34</string>
+                <string>733 453 56 51</string>
             </attr>
         </node>
         <node id="n4">
             <attr name="layout">
-                <string>674 145 36 17</string>
+                <string>829 257 36 17</string>
             </attr>
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>498 404 29 17</string>
+                <string>653 516 29 17</string>
             </attr>
         </node>
         <node id="n2">
             <attr name="layout">
-                <string>349 398 36 34</string>
+                <string>504 510 36 34</string>
             </attr>
         </node>
         <node id="n7">
             <attr name="layout">
-                <string>273 592 56 51</string>
+                <string>179 418 56 51</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -59,7 +59,12 @@
         </edge>
         <edge from="n6" to="n6">
             <attr name="label">
-                <string>flag:white</string>
+                <string>flag:black</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>new:flag:taking</string>
             </attr>
         </edge>
         <edge from="n6" to="n6">
@@ -109,7 +114,7 @@
         </edge>
         <edge from="n2" to="n2">
             <attr name="label">
-                <string>flag:black</string>
+                <string>flag:white</string>
             </attr>
         </edge>
         <edge from="n2" to="n2">
@@ -124,7 +129,7 @@
         </edge>
         <edge from="n7" to="n7">
             <attr name="label">
-                <string>flag:white</string>
+                <string>flag:black</string>
             </attr>
         </edge>
         <edge from="n7" to="n7">

@@ -2,14 +2,19 @@
 <gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
     <graph role="rule" edgeids="false" edgemode="directed" id="concede_turn_black">
         <attr name="priority">
-            <string>2</string>
+            <string>9</string>
         </attr>
         <attr name="$version">
             <string>curly</string>
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>167 393 50 68</string>
+                <string>166 393 51 68</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>595 256 50 34</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -30,6 +35,16 @@
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>turn</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>del:flag:taking</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>stone</string>
             </attr>
         </edge>
     </graph>
