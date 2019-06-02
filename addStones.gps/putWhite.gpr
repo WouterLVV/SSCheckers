@@ -22,6 +22,21 @@
                 <string>309 418 19 19</string>
             </attr>
         </node>
+        <node id="n3">
+            <attr name="layout">
+                <string>247 337 26 17</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>357 329 19 19</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>364 231 35 17</string>
+            </attr>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>field</string>
@@ -30,6 +45,11 @@
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>top</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n3">
+            <attr name="label">
+                <string>ur</string>
             </attr>
         </edge>
         <edge from="n1" to="n1">
@@ -63,6 +83,44 @@
         <edge from="n2" to="n0">
             <attr name="label">
                 <string>not:on</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>field</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n3">
+            <attr name="label">
+                <string>not:on</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>new:</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>flag:white</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>new:stone</string>
+            </attr>
+            <attr name="layout">
+                <string>500 0 228 218 212 288 228 218 11</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n3">
+            <attr name="label">
+                <string>new:on</string>
             </attr>
         </edge>
     </graph>
