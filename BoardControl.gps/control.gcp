@@ -1,0 +1,29 @@
+recipe expand() {
+	diag_expand;
+
+	alap {
+		vertical_expand;
+		add_top;
+		connect_ur_top;
+	}
+	try {
+		left_expand;
+		add_top;
+	}
+	alap {
+		horizontal_expand;
+		add_right;
+		connect_ur;
+	}
+	try {
+		bottom_expand;
+		add_right;
+	}
+}
+
+expand();
+expand();
+expand();
+expand();
+expand();
+expand();
