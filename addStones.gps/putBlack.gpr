@@ -17,6 +17,11 @@
                 <string>178 550 33 17</string>
             </attr>
         </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>312 410 19 19</string>
+            </attr>
+        </node>
         <edge from="n0" to="n0">
             <attr name="label">
                 <string>bottom</string>
@@ -42,12 +47,22 @@
                 <string>new:stone</string>
             </attr>
             <attr name="layout">
-                <string>500 0 195 559 178 628 178 628 11</string>
+                <string>500 0 195 559 178 628 194 558 11</string>
             </attr>
         </edge>
         <edge from="n3" to="n0">
             <attr name="label">
                 <string>new:on</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>not:on</string>
             </attr>
         </edge>
     </graph>

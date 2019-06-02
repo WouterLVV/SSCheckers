@@ -9,12 +9,17 @@
         </attr>
         <node id="n0">
             <attr name="layout">
-                <string>165 407 47 34</string>
+                <string>175 407 26 34</string>
             </attr>
         </node>
         <node id="n1">
             <attr name="layout">
                 <string>177 550 35 17</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>309 418 19 19</string>
             </attr>
         </node>
         <edge from="n0" to="n0">
@@ -48,6 +53,16 @@
         <edge from="n1" to="n0">
             <attr name="label">
                 <string>new:on</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>not:on</string>
             </attr>
         </edge>
     </graph>
